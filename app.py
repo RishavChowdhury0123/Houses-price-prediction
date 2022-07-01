@@ -44,10 +44,10 @@ def capital(x):
 
 # @st.cache(allow_output_mutation=True, show_spinner=False, suppress_st_warning=True)
 def load_data():
-    path= r'C:\Users\DELL\Python files\predicting house prices of india\X.pkl'
+    path= 'X.pkl'
     with open(path, 'rb') as ref:
         df= pickle.load(ref)
-    path= r'C:\Users\DELL\Python files\predicting house prices of india\model.pkl'
+    path= 'model.pkl'
     with open(path, 'rb') as ref:
         pipe= pickle.load(ref)
     
@@ -129,7 +129,7 @@ def main():
         pred= format_numbers((pred**2)*100000, fmt='.1f')
         st.markdown('Price of the house would be approximately around  ₹%s'%pred)
 
-path= r'C:\Users\DELL\Python files\predicting house prices of india\capitals.pkl'
+path= 'capitals.pkl'
 with open(path, 'rb') as ref:
     capitals= pickle.load(ref)
 
