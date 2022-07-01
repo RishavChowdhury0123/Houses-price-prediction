@@ -39,7 +39,7 @@ def capital(x):
     else: 
         return 0
 
-# @st.cache(allow_output_mutation=True, show_spinner=False, suppress_st_warning=True)
+@st.cache(allow_output_mutation=True, show_spinner=False, suppress_st_warning=True)
 def load_data():
     path= 'X.pkl'
     with open(path, 'rb') as ref:
