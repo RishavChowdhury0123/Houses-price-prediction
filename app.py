@@ -1,9 +1,6 @@
 import pandas as pd
 import numpy as np
 import pickle
-import matplotlib.pyplot as plt
-import warnings
-import seaborn as sns
 import streamlit as st
 
 st.set_page_config(page_title='House price predictor', layout='wide')
